@@ -79,21 +79,21 @@ mv ./modal-beatrice-trainer/modal_train.py ./
   mkdir data
   ```
 
-- **成果物保存ディレクトリの作成 (`out_dir/`)**  
+- **成果物保存ディレクトリの作成 (`model/`)**  
   学習中に生成される重みなどの成果物を保存するためのディレクトリです。  
   このディレクトリは Modal の永続ボリュームとしてマウントするために使用します。
 ```bash
-mkdir out_dir 
+mkdir model
 ```
 
-このボリュームは、Modal 実行時に成果物保存用ディレクトリとして `/workspace/out_dir` にマウントします。
+このボリュームは、Modal 実行時に成果物保存用ディレクトリとして `/workspace/model` にマウントします。
 
 ### 3. modal_train.py の実行方法
 
 Modal 上で学習ジョブを実行するには、以下のようにコマンドラインから実行します。
 
 ```bash
-modal run modal_train.py --data-dir ./data
+modal run modal_train.py --data-dir ./data --out-dir /workspace/model
 ```
 
 - `--data-dir` : 学習データが配置されたディレクトリ（例: `./data`）を指定します。
@@ -122,7 +122,7 @@ modal run modal_train.py --data-dir ./data
 以下は、実際に Modal 上でジョブを実行する際のコマンド例です。
 
 ```bash
-modal run modal_train.py --data-dir ./data
+modal run modal_train.py --data-dir ./data --out-dir /workspace/model
 ```
 
 Modal のジョブが正常に実行されると、学習済みの重みが永続ボリューム上の `/workspace//out_dir` に保存されます。
