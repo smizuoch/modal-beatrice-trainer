@@ -123,8 +123,7 @@ modal run modal_train.py --data-dir ./data
 ```
 
 Modal のジョブが正常に実行されると、学習済みの重みが永続ボリューム上の `/workspace//out_dir` に保存されます。
-https://modal.com/storage/
-上記のリンクにアクセスすると手順通りに行なっていれば `beatrice-models` というボリューム上に `checkpoint_data_00000001.pt` のような形でモデルが出来上がります。
+https://modal.com/storage/ リンクにアクセスすると手順通りに行なっていれば `beatrice-models` というボリューム上に `checkpoint_data_00000001.pt` のような形でモデルが出来上がります。
 ダウンロードしたい場合は以下のコマンドでダウンロードできます。
 ```bash
 modal volume get beatrice-models checkpoint_latest.pt
