@@ -25,7 +25,7 @@ Python 環境に Modal CLI をインストールします。
 ```bash
 pip install modal
 ```
-2. **Modal アカウントの認証**
+2. **Modal アカウントの認証**  
 初回セットアップでは、以下のコマンドを実行してブラウザで認証を行います。
 ```bash
 modal setup
