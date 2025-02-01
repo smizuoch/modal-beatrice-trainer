@@ -20,6 +20,7 @@ def train(data_dir: str):
         "cd /workspace && "
         "poetry config virtualenvs.create false && "
         "poetry install && "
-        "python3 beatrice_trainer -d {data_dir} -o /workspace/out_dir -c assets/my_config.json"
+        "python3 beatrice_trainer -d {data_dir} -o /workspace/out_dir"
+        # "python3 beatrice_trainer -d {data_dir} -o /workspace/out_dir -c assets/my_config.json" # コンフィグファイルを指定する場合
     ).format(data_dir=data_dir)
     subprocess.run(cmd, shell=True, check=True)
