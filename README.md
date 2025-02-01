@@ -75,17 +75,9 @@ mv ./modal-beatrice-trainer/modal_train.py ./
 mkdir out_dir 
 ```
 
-### 3. Modal の永続ボリュームの作成
-
-Modal CLI を用いて永続ボリュームを作成します。ターミナルで以下のコマンドを実行してください。
-
-```bash
-modal volume create beatrice-models
-```
-
 このボリュームは、Modal 実行時に成果物保存用ディレクトリとして `/workspace/out_dir` にマウントします。
 
-### 4. modal_train.py の実行方法
+### 3. modal_train.py の実行方法
 
 Modal 上で学習ジョブを実行するには、以下のようにコマンドラインから実行します。
 
