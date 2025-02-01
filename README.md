@@ -136,4 +136,4 @@ modal volume get beatrice-models checkpoint_latest.pt
 
 ## お問い合わせ
 
-ご質問やフィードバックは、GitHub の [Issues](https://github.com/yourusername/modal-beatrice-trainer/issues) でお知らせください。
+ご質問やフィードバックは、GitHub の [Issues](https://github.com/yourusername/modal-beatrice-trainer/issues) でお知らせください。できる限り対応します。
