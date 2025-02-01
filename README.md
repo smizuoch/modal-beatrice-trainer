@@ -42,6 +42,17 @@ git clone https://huggingface.co/fierce-cats/beatrice-trainer
 cd beatrice-trainer
 ```
 
+ダウンロードしましたら以下のコマンドを実行してpyproject.tomlファイルの記述を一部変更します。
+```bash
+sed -i 's/python = ">=3.9"/python = ">=3.10"/g' pyproject.toml
+```
+> **注意**:  
+> - macOS を使用している場合、`sed -i` オプションの使い方が異なるため、以下のようにバックアップ拡張子を指定する必要があります:
+>
+>   ```bash
+>   sed -i '' 's/python = ">=3.9"/python = ">=3.10"/g' pyproject.toml
+>   ```
+
 ### 2. 必要ファイルの配置とディレクトリの作成
 
 - **modal_train.py の配置**  
