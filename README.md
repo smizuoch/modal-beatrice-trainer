@@ -128,7 +128,13 @@ https://modal.com/storage/ リンクにアクセスすると手順通りに行�
 ```bash
 modal volume get beatrice-models checkpoint_latest.pt
 ```
-最終出力のモデルをダウンロードする例
+最終出力のモデルをダウンロードする例  
+
+愚直に全てダウンロードするなら以下のコマンドでできます。
+```bash
+modal volume get beatrice-models /
+```
+間違えてデスクトップやダウンロードで行うと大変なことになるので新しいディレクトリに移動して実行することをお勧めします。
 
 ## ライセンス
 
