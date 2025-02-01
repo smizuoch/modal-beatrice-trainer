@@ -135,3 +135,7 @@ modal volume get beatrice-models /
 ## お問い合わせ
 
 ご質問やフィードバックは、GitHub の [Issues](https://github.com/yourusername/modal-beatrice-trainer/issues) でお知らせください。できる限り対応します。
+
+## 支援
+
+当方リソースやお金をあまり持ってない学生のためパソコンやリソース、資金を支援していただける方がいれば連絡いただけたら嬉しいです。
