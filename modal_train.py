@@ -9,7 +9,7 @@ volume = modal.Volume.from_name("beatrice-models", create_if_missing=True)
 image = (
     modal.Image.from_registry("python:3.10-slim")
     .apt_install("g++", "build-essential")
-    .pip_install("poetry")
+    .pip_install("poetry", "torch", "torchaudio", "pyworld", "tensorboard")
     .add_local_dir(".", remote_path="/workspace")
 )
 
