@@ -3,6 +3,9 @@
 このプロジェクトは、[fierce-cats/beatrice-trainer](https://huggingface.co/fierce-cats/beatrice-trainer) のコードをベースに、Modal 上で Beatrice モデルの学習を実行するためのセットアップ例です。  
 このリポジトリには Modal でのジョブ実行用スクリプト `modal_train.py` が含まれており、学習データ（data ディレクトリ）と学習済みモデル（out_dir ディレクトリ）の永続化のためのディレクトリを用意します。
 
+> **注意**:
+> 一つでも手順を間違えたら動かない可能性大です。
+
 ## ディレクトリ構成
 
 リポジトリのルートは以下のような構成となります。
