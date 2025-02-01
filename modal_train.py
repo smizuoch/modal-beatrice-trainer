@@ -13,7 +13,7 @@ image = (
 )
 
 # Function の volumes 引数で Volume を /workspace/out_dir にマウントする
-@app.function(image=image, volumes={"/workspace/out_dir": volume}, gpu="A100", timeout=36000)
+@app.function(image=image, volumes={"/workspace/out_dir": volume}, gpu="A10G", timeout=36000)
 def train(data_dir: str):
     import subprocess
     cmd = (
