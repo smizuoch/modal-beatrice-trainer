@@ -38,11 +38,13 @@ modal setup
 ### 1. リポジトリのダウンロード
 
 Git LFS を使用してリポジトリをクローンします。ターミナルで以下のコマンドを実行してください。
-
+> **注意**:
+> 必ずGit LFSが存在することを確認してください！！
 ```bash
 git lfs install
 git clone https://huggingface.co/fierce-cats/beatrice-trainer
 cd beatrice-trainer
+git lfs pull
 ```
 
 ダウンロードしましたら以下のコマンドを実行してpyproject.tomlファイルの記述を一部変更します。
